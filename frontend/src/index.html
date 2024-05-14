@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>test</title>
+        <link rel="stylesheet" href="output.css" />
+    </head>
+    <body class="bg-black">
+        <div class="p-5 mt-5">
+            <div class="flex ml-1">
+                <input
+                    class="border px-2 py-2 rounded"
+                    placeholder="Enter text to be hashed"
+                    type="text"
+                    id="input"
+                    autocomplete="off"
+                />
+                <button
+                    class="border ml-2 text-white px-2 py-2 rounded hover:bg-[#4b4b4b] focus:ring-2 ring-[#3d8680]"
+                    id="generate"
+                >
+                    Generate
+                </button>
+            </div>
+            <div class="mt-3 flex ml-1">
+                <p class="text-white">Length:</p>
+                <input
+                    id="length"
+                    class="ml-2"
+                    type="range"
+                    min="0"
+                    max="20"
+                    value="0"
+                />
+                <p class="ml-2 text-white"><span id="lentghOutput">0</span></p>
+            </div>
+            <div class="mt-3 flex ml-1">
+                <p class="text-white">
+                    Hashed password: <span id="hashOutput"></span>
+                </p>
+                <button
+                    class="invisible border rounded ml-2 px-1 text-white hover:bg-[#4b4b4b] focus:ring-2 ring-[#3d8680] translate-y-[-4px]"
+                    id="copy"
+                >
+                    copy
+                </button>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
